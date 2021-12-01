@@ -1,4 +1,4 @@
-package com.sub_project.ManufacturerService.entity;
+package com.sub_project.ManufacturerService.VO;
 
 import lombok.Data;
 
@@ -14,13 +14,13 @@ import javax.persistence.Id;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Manufacturer{
+public class Phone {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
 
     private String name;
     private int year;
-    private String country;
-    private int phoneId;
+    private int count;
+    private String desciption;
 }
